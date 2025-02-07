@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment8.ProfilePage"
+             Title="ProfilePage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="20" >
+            <Label Text="Your Profile Photo"/>
+            <Image x:Name="ProfileImage" Aspect="AspectFill" HeightRequest="150" WidthRequest="150"/>
+            <Button Text="Add My Profile Picture"
+                    Clicked="OnAddProfilePictureClicked"/>
+
+            <Label Text="Name" />
+            <Entry x:Name="NameEntry" Placeholder="Enter your name"/>
+
+            <Label Text="Surname" />
+            <Entry x:Name="SurnameEntry" Placeholder="Enter your Surname"/>
+
+            <Label Text="Email" />
+            <Entry x:Name="EmailEntry" Placeholder="Enter your EmailAddress"/>
+
+            <Label Text="Bio" />
+            <Entry x:Name="BioEntry" Placeholder="Add your bio here"/>
+
+            <Button Text="Save"
+                    Clicked="OnSaveButtonClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
